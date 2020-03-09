@@ -7,5 +7,22 @@ function handleClick(e) {
 
 /* End Given Code, don't edit above here...*/
 
-/* Write your implementation of greet() */
+const greet = (timeString) => {
+  const time = parseInt(timeString)
+  if (time < 12)
+  return "Good Morning"
+  if (time > 17)
+    return "Good Evening"
+  else 
+    return "Good Afternoon"
+
+
+}
+
+/* Write your implementation of greet() *
 /* Write your implementation of displayMessage() */
+
+const displayMessage = (message) => {
+  document.querySelector('#greeting').innerText = message
+
+}
